@@ -1,16 +1,41 @@
-<!DOCTYPE html>
-<html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-
-        <title>Sistem Coaching Karir</title>
-
-        <!-- Fonts -->
-        <link rel="preconnect" href="https://fonts.bunny.net">
-        <link href="https://fonts.bunny.net/css?family=figtree:400,600&display=swap" rel="stylesheet" />
-        <link href="{{ asset('css/bootstrap.min.css') }}" rel="stylesheet">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-        @yield('extracss')
-    </head>
-<body class="antialiased">
+<aside class="main-sidebar sidebar-dark-primary elevation-4">
+    <a href="#" class="brand-link">
+        <span class="brand-text font-weight-light">Coaching Karir</span>
+    </a>
+    <div class="sidebar">
+        <nav class="mt-2">
+            <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
+                <li class="nav-item">
+                    <a href="{{ route('home') }}" class="nav-link">
+                        <i class="nav-icon fas fa-tachometer-alt"></i>
+                        <p>Dashboard</p>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">
+                        <i class="nav-icon fas fa-user-tie"></i>
+                        <p>Showcase Consultant</p>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">
+                        <i class="nav-icon fas fa-comments"></i>
+                        <p >Sesi</p>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">
+                        <i class="nav-icon fas fa-calendar-alt"></i>
+                        <p>Jadwal</p>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">
+                        <i class="nav-icon fas fa-users"></i>
+                        <p>User Management</p>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+</aside>
